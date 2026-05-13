@@ -1,0 +1,32 @@
+.game-grid-2048 {
+    container-type: size;
+    aspect-ratio: 1/1;
+    max-height: 80vh;
+    position: relative;
+    background-color: #cec2b4;
+    border-radius: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.game-tile-2048 {
+    container-type: size;
+    width: calc(var(--game-tile-size) - 1%);
+    height: calc(var(--game-tile-size) - 1%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: calc(var(--x) + calc(50% / var(--num-2048-tiles)) - calc(var(--game-tile-size) / 2));
+    bottom: calc(var(--y) + calc(50% / var(--num-2048-tiles)) - calc(var(--game-tile-size) / 2));
+    border-radius: 25%;
+    background-color: var(--bg-color-2048);
+    transition-property: width height left top background-color;
+    transition-duration: var(--transition-time-for-2048);
+}
+.game-tile-2048 span {
+    color: var(--text-color-2048);
+    font-size: 50cqw;
+    transition-property: color;
+    transition-duration: var(--transition-time-for-2048);
+}

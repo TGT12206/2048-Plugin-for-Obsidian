@@ -1,0 +1,11 @@
+{
+	"id": "2048",
+	"name": "2048",
+	"version": "0.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "",
+	"author": "TGT12206",
+	"authorUrl": "n/a",
+	"fundingUrl": "n/a",
+	"isDesktopOnly": true
+}
